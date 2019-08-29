@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>webpack 4 quickstart</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="app">-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload ="printData1('todo');">
+<!--<h5 id="about" style ="float: right;margin: 25px;"> About </h5>-->
+
+
+<input type="checkbox" id="toggle">
+<label  class="about1"for="toggle">About App</label>
+
+<dialog >
+    <p>
+        The goal of this app is to help us become more aware of how we spend time in the process of doing those tasks
+        and how productive that time is. It can help set some constraints on social media to reduce distraction and
+        track the time we spend working on the todo items. When we have a better sense of the estimated time we’ll
+        need to spend on our tasks, along with the validated time spent on the items for reference or personal/team
+        reviews, we are able to manage our daily routines more efficiently.
+    </p>
+
+    <label class="about1"for="toggle">close </label>
+</dialog>
+
+
+<h1 style =" text-align: center;color:red">TODO App</h1>
+<!--<body>-->
+<div class ="input_division">
+    <form id="myForm">
+        <br>
+        <label>Task Name :~</label>
+        <input type="text" name="fname" onfocus="this.value= ''" id ="taskvalue" maxlength="30" placeholder="Enter Valid English words and no special characters ...">
+
+        <button type="button" id ="insertId" class ="input_btn">Submit</button>
+<!--        <button type="button" class="all" onclick="deleteAllData1('todo')"> Delete all todo data</button>-->
+<!--        <button type="button" class="all" onclick="deleteAllData1('inprogress')"> Delete all inprogress data</button>-->
+<!--        <button type="button" class="all" onclick="deleteAllData1('done')"> Delete all done data</button>-->
+    </form>
+</div>
+<br><br>
+<!--<h1 id ="title"></h1>-->
+
+<div class="flx">
+    <div class="navbar" id ="myDIV">
+
+
+        <button id ="todo_active" onclick ="printData1('todo')" class ="btn active">TODO</button>
+        <button id ="inprogress_active" onclick ="printData1('inprogress')"class="btn">IN PROGRESS</button>
+        <button id ="done_active" onclick="printData1('done')" class="btn">DONE</button>
+<!--        -->
+<!--        <button onclick ="printData1('todo')" class ="btn active">TODO</button>-->
+<!--        <button onclick ="printData1('inprogress')"class="btn">IN PROGRESS</button>-->
+<!--        <button onclick="printData1('done')" class="btn">DONE</button>-->
+
+<!--        <img src="completed.jpg" alt="Smiley face" width="20" height="20">-->
+<!--        <img src="https://cdn.sstatic.net/Img/unified/sprites.svg?v=e5e58ae7df45" alt="Stack Overflow logo and icons and such">-->
+    </div>
+
+    <h5 id ="description"></h5>
+
+    <p id ="printing"></p>
+</div>
+
+<!--<link rel="stylesheet" href="css/index.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--<script src ="javascript/indexjQuery.js"></script>-->
+<!--<script src ="../test/test.js"></script>-->
+
+</body>
+</html>

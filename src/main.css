@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+#toggle{
+    visibility: hidden;
+    opacity: 0;
+    /*position: relative;*/
+    z-index: -2;
+    float:right;
+}
+
+#toggle:checked ~ dialog {
+    display: block;
+}
+
+.about1{
+    background: skyblue;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 4px;
+    float: right;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+dialog{
+    animation: appear 450ms ease-in 1;
+    max-width: 500px;
+}
+
+
+/* Style the body */
+body {
+    font-family: Arial, serif;
+    margin: 0;
+}
+.input {
+    width :400px;
+
+    padding: 8px 16px;
+}
+.inp {
+    color :black;
+}
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+.closebtn {
+    float :left;
+}
+#completed {
+    float : left;
+    display :none;
+    margin-left :30px;
+    margin-top: 10px;
+    /*display :none;*/
+}
+.spanhover {
+    visibility: hidden;
+    font-style: oblique;    /*width: 120px;*/
+    width :auto;
+    /*background-color: darkgrey;*/
+    /*color: #fff;*/
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.flex-container:hover .spanhover {
+    visibility: visible;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    width :100%;
+    margin : 5px;
+    border-radius: 4px;
+}
+
+
+/* Style the navigation bar links */
+.navbar .btn {
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    width :100%;
+    margin : 5px;
+}
+/*#about:hover {*/
+/*    color:deeppink;*/
+/*}*/
+.all {
+    color:white;
+    padding : 8px;
+    width :33%;
+    border-radius: 4px;
+    background-color: #4CAF50;
+}
+.flex-container {
+    display: flex;
+    height: auto;
+    width :auto;
+    margin : 5px;
+    border-radius: 4px;
+    align-items: flex-start;
+    background-color: #ffe9e2;
+    flex-flow: row wrap;
+}
+
+.active, .btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    height :100px;
+    float: left;
+    /*line-height: 75px;*/
+    /*padding: 10px;*/
+    font-size: 30px;
+}
+
+/* Change color on hover */
+.navbar .btn:hover {
+
+    background-color: #ddd;
+    color:mediumvioletred;
+
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+.input_division {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin : 5px;
+    /*padding: 20px;*/
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input_btn{
+    width: 100%;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.td {
+
+    color:#FF1493;
+}
+.textBox {
+    width: 200px;
+    height: 30px;
+    /*border: 1px solid #000;*/
+    overflow: visible;
+    line-height: 30px;
+
+    white-space: nowrap;
+    padding: 5px;
+    position: relative;
+}
+.textBox span {
+    position: absolute;
+    white-space: nowrap;
+    /*transform: translateX(0);*/
+    /*transition: 2s;*/
+}
+.textBox:hover span {
+    /*transform: translateX(calc(-40px - 10%));*/
+    /*overflow: visible;*/
+    /*overflow: scroll;*/
+}
+span {
+    overflow-x: auto;
+}
+span.a {
+    display: inline-block;
+    display: none;
+    width: 25px;
+}
+span.b {
+    /*white-space: nowrap;*/
+    width: 20px;
+    font-size: 18px;
+}
+.tempdivclass {
+    color :red;
+    background-color: blue;
+}
+span.d {/*
+  display: inline-block;*/
+    float: right;
+    margin-right: 5px;
+    width: 25px;
+    margin-left: 100px;
+}
+span.c {
+    /*white-space: nowrap; */
+    font-size: 20px;
+    display: block;
+    left: 35px;
+
+    width: 180px;
+    overflow: hidden;
+    float :left;
+    text-overflow: ellipsis;
+}
+.add_btn {
+    color :red;
+    background-color: yellow;
+}
+/*
+span.c :hover {
+  overflow : visible;
+}*/
+.form {
+    background-color :#BDB76B;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+div.flex-container>div:nth-of-type(even){
+    background: #2cbca2;
+}
+div.flex-container>div:nth-of-type(odd) {
+    background: #f4c630;
+}
+
+.flx {
+    margin : 5px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+        height: 100%;
+        width : 100%;
+    }
+
+    .flx {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width :30%;/*
+    float :left;*/
+        height :100%;
+        display: table;
+
+
+    }
+    .navbar, .btn {
+        height :100%;
+    }
+    .btn {
+        width :30%;
+    }
+}

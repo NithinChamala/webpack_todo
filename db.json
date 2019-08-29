@@ -1,0 +1,143 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-object",
+      "author": "nithin"
+    },
+    {
+      "id": 3
+    },
+    {
+      "task": "love her",
+      "timestamp": "1564119575101",
+      "status": "todo",
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tasks": [
+    {
+      "task": "sing song",
+      "timestamp": 1565604815734,
+      "status": "inprogress",
+      "important": "no",
+      "id": 4
+    },
+    {
+      "task": "hey hello",
+      "timestamp": 1565605721197,
+      "status": "inprogress",
+      "important": "yes",
+      "id": 5
+    },
+    {
+      "task": "good morning",
+      "timestamp": 1565605777642,
+      "status": "inprogress",
+      "important": "no",
+      "id": 6
+    },
+    {
+      "task": "demand",
+      "timestamp": 1565671979511,
+      "status": "done",
+      "important": "no",
+      "id": 7
+    },
+    {
+      "task": "good demand",
+      "timestamp": 1565672018854,
+      "status": "inprogress",
+      "important": "yes",
+      "id": 8
+    },
+    {
+      "task": "how are you",
+      "timestamp": 1565676630202,
+      "status": "inprogress",
+      "important": "no",
+      "id": 9
+    },
+    {
+      "task": "making him",
+      "timestamp": 1565676905950,
+      "status": "inprogress",
+      "important": "no",
+      "id": 11
+    },
+    {
+      "task": "love him",
+      "timestamp": 1565679020071,
+      "status": "todo",
+      "important": "no",
+      "id": 12
+    },
+    {
+      "task": "hate him yes",
+      "timestamp": 1565679874275,
+      "status": "inprogress",
+      "important": "no",
+      "id": 13
+    },
+    {
+      "task": "yes",
+      "timestamp": 1565686636288,
+      "status": "todo",
+      "important": "no",
+      "id": 14
+    },
+    {
+      "task": "no",
+      "timestamp": 1565687001493,
+      "status": "done",
+      "important": "no",
+      "id": 15
+    },
+    {
+      "task": "common",
+      "timestamp": 1565694345849,
+      "status": "todo",
+      "important": "no",
+      "id": 16
+    },
+    {
+      "task": "come now",
+      "timestamp": 1565696299278,
+      "status": "todo",
+      "important": "no",
+      "id": 17
+    },
+    {
+      "task": "not her",
+      "timestamp": 1566108774626,
+      "status": "inprogress",
+      "important": "no",
+      "id": 19
+    },
+    {
+      "task": "come later",
+      "timestamp": 1567053878641,
+      "status": "todo",
+      "important": "no",
+      "id": 20
+    }
+  ]
+}
